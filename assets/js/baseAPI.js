@@ -4,7 +4,9 @@
 $.ajaxPrefilter(function(options) {
 
     // 在发起真正的 ajax 请求之前，统一拼接请求的跟路径
-    options.url = 'http://api-breakingnews-web.itheima.net' + options.url;
+    // options.url = 'http://api-breakingnews-web.itheima.net' + options.url;
+    options.url = 'http://127.0.0.1:3007' + options.url;
+
     console.log(options.url);
 
 
